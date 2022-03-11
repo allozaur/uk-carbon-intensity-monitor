@@ -1,23 +1,30 @@
 :root {
-	--font-family: "Poppins", -apple-system,
-		"Segoe UI", "Ubuntu", "Helvetica Neue", "Arial",
-		sans-serif;
+	--font-family: "Poppins", -apple-system, "Segoe UI",
+		"Ubuntu", "Helvetica Neue", "Arial", sans-serif;
 	--border-1: 1px solid;
 
 	--c-primary: hsla(167, 68%, 45%, 1);
-	--c-secondary: background: hsla(225, 12%, 84%, 1);
-	--c-secondary-dark: hsla(225, 12%, 64%, 1);
-	--c-secondary-light: hsla(225, 12%, 96%, 1);
-	--c-text: hsla(225, 16%, 22%, 1);
-	--c-white: hsla(0, 0%, 100%, 1);
+	--c-primary-dark: hsla(167, 68%, 36%, 1);
+	--c-primary-light: hsla(167, 60%, 70%, 1);
 
-	--c-carbon-index-very-low: hsla(146, 78%, 47%, 1);
-	--c-carbon-index-low: hsla(120, 93%, 79%, 1);
+	--c-secondary: hsla(225, 12%, 84%, 1);
+	--c-secondary-dark: hsla(225, 12%, 80%, 1);
+	--c-secondary-light: hsla(225, 12%, 88%, 1);
+
+	--c-text: hsla(225, 16%, 12%, 1);
+	--c-text-light: hsla(225, 8%, 44%, 1);
+
+	--c-white: hsla(0, 0%, 100%, 1);
+	--c-white-dark: hsla(0, 0%, 98%, 1);
+
+	--c-carbon-index-very-low: hsla(146, 68%, 44%, 1);
+	--c-carbon-index-low: hsla(106, 78%, 54%, 1);
 	--c-carbon-index-moderate: hsla(39, 100%, 50%, 1);
 	--c-carbon-index-high: hsla(16, 100%, 50%, 1);
 	--c-carbon-index-very-high: hsla(0, 100%, 50%, 1);
 
-	--b-primary: 2px var(--c-primary) solid;
+	--b-primary: 3px var(--c-primary) solid;
+	--b-secondary: 3px var(--c-secondary) solid;
 
 	--header-height: 5rem;
 

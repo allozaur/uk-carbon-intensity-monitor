@@ -1,0 +1,36 @@
+table,
+table * {
+	transition: opacity 0.2s ease-out;
+}
+
+tr {
+	cursor: pointer;
+}
+
+th,
+td {
+	padding: 1rem;
+}
+
+th {
+	font-weight: 700;
+	background: var(--c-primary);
+	color: var(--c-white);
+}
+
+table:hover tr td {
+	opacity: 0.36;
+}
+
+tr:hover td {
+	background: var(--c-secondary-light);
+	opacity: 1 !important;
+}
+
+tr:nth-child(2n) {
+	background: #f9f9f9;
+}
+
+tr:nth-child(2n + 1) {
+	background: #f0f0f0;
+}

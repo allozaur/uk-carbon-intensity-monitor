@@ -1,0 +1,17 @@
+select {
+	appearance: none;
+	background: var(--c-white);
+	border: var(--b-primary);
+	border-radius: 1rem;
+	color: var(--c-text);
+	padding: 1rem;
+	font-size: 1.25rem;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select button {
+	display: none !important;
+}
