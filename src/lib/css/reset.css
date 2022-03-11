@@ -1,0 +1,8 @@
+body {
+	font-family: var(--font-family);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: var(--c-secondary);
+	color: var(--c-text);
+}
