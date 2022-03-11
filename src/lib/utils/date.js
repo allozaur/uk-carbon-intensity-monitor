@@ -8,6 +8,10 @@ export const formatDate = (date, locale = "en-GB") => {
   return date
 }
 
+export const formatDateIso = (date) => {
+  return date.toISOString();
+}
+
 export const formatTime = (date, locale = "en-GB") => {
   date = new Date(date)
 

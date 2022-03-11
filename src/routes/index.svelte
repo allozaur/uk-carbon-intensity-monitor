@@ -1,9 +1,13 @@
 <script context="module">
 	import "$lib/css/table.css";
+	import { formatDateIso } from "$lib/utils";
+
+	const today = new Date();
+	const reqDate = formatDateIso(today);
 
 	export async function load({ fetch }) {
 		const res = await fetch(
-			"https://api.carbonintensity.org.uk/regional/intensity/source/2022-02-14T18:00:00.000Z/fw24h"
+			`https://api.carbonintensity.org.uk/regional/intensity/source/${reqDate}/fw24h`
 		);
 		const content = await res.json();
 
@@ -35,7 +39,7 @@
 
 	export let content = {};
 
-	$state.datasets = content.data.reverse();
+	$state.datasets = content.data;
 
 	const getSourceregionLabels = (stateArray) => {
 		$state.sourceregionLabels = [];
